@@ -9,7 +9,7 @@ pipeline {
     success {
       echo "Pipline Pass"
       mail to : "annusingh12112003@gmail.com",
-      subject : "SUCCESS",
+      subject : "SUCCESS : job '${env.JOB _name",
       body : "email working"
     }
     failure{
